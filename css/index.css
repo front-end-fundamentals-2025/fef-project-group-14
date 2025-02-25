@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Satisfy";
+  src: url(fonts/Satisfy-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-start;
+  background-color: #3d0066;
+  border-top: solid 0.1vw#03071e;
+}
+footer .contact-form {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-content: center;
+  gap: 20%;
+  font-size: 1.5vw;
+  color: #c86bfa;
+}
+input[type="submit"] {
+  margin-top: 1vw;
+  height: 2vw;
+  background-color: #ffee32;
+  font-size: 1vw;
+}
+input[type="text"],
+select,
+textarea {
+  height: 1.5vw;
+  font-size: 1vw;
+  margin-left: 2vw;
+}
+label {
+  font-size: 1.2vw;
+  font-family: "Pacifico";
+}
+footer p {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  color: #c86bfa;
+  margin-left: 2vw;
+  margin-top: 3vw;
+}
