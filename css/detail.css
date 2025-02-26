@@ -2,48 +2,60 @@
   font-family: "Satisfy";
   src: url(fonts/Satisfy-Regular.ttf);
 }
-@font-face {
-  font-family: "Moondance";
-  src: url(fonts/Lobster-Regular.ttf);
-}
+
 body {
   margin: 0;
   padding: 0;
 }
 
-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 15vw);
-  justify-items: center;
-  align-items: center;
+header {
+  display: flex;
+  justify-content: flex-start;
+  position: fixed;
+  height: 10vw;
+  gap: 57%;
+  width: 100%;
+  border: bottom;
   background-color: #3d0066;
+  margin-bottom: 10vw;
 }
-
-section figure {
-  grid-column: 1/4;
-  grid-row: 1/4;
+header #title {
+  width: 50%;
 }
-section h1 {
-  grid-column: 2/3;
-  grid-row: 1/2;
-  color: white;
-  font-family: "Moondance";
+header p {
+  color: #c86bfa;
+  font-size: 3vw;
+  height: 1vw;
+  font-family: "Satisfy";
+  letter-spacing: 0.3vw;
+}
+header #fizz {
+  margin-top: 0.5vw;
+  margin-left: 13%;
+}
+header #wizz {
+  margin-left: 21%;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 2.5vw;
+  list-style-type: none;
+  display: flex;
+  gap: 5vw;
+  margin-right: 5vw;
+}
+header ul li a {
+  color: black;
+  text-decoration: none;
   font-size: 3vw;
 }
-section button {
-  grid-column: 2/3;
-  grid-row: 3/5;
-  height: 2vw;
-  width: 20%;
-  background-color: #ffee32;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
-section button a {
-  color: #03071e;
-  text-decoration: none;
-  font-size: 1.3vw;
-  font-family: "Satisfy";
-}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -74,8 +86,8 @@ textarea {
   margin-left: 2vw;
 }
 label {
+  font-family: "DM";
   font-size: 1.2vw;
-  font-family: "Pacifico";
 }
 footer p {
   grid-column: 1/2;

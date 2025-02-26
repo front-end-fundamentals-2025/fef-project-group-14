@@ -3,30 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Canstore</title>
+    <title>Fizz Wizz</title>
+    <link rel="stylesheet" href="css/detail.css" />
   </head>
   <body>
     <header>
-      <p class="orbitron-normal">Canstore</p>
+      <div id="title">
+        <p id="fizz">Fizz</p>
+        <p id="wizz">Wizz</p>
+      </div>
       <nav>
         <ul>
-          <a href="#">
-            <li>&#x1F50E;</li>
-          </a>
-          <a href="#">
-            <li>&#x1f6d2;</li>
-          </a>
-          <a href="#">
-            <li>&#9776;</li>
-          </a>
+          <li><a href="#">&#9776;</a></li>
+          <li><a href="#">&#x1f6d2;</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <img src="image/tiktok.webp" alt="" />
+      <figure>
+        <img src="image/tiktok.webp" alt="" />
+      </figure>
     </main>
 
-    <footer>&copy; Canstore 2025</footer>
+    <footer>
+      <div class="contact-form">
+        <p>Sign up for the news:</p>
+        <form action="action_page.php">
+          <label for="Write your name"></label>
+          <input type="text" id="mail" name="mail" placeholder="Your e-mail" />
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <p>&copy; 2025 Fizz Wizz All Rights Reserved</p>
+    </footer>
   </body>
 </html>
