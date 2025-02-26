@@ -22,6 +22,10 @@ header {
 header #title {
   width: 50%;
 }
+
+#title-link {
+  text-decoration: none;
+}
 header p {
   color: #c86bfa;
   font-size: 3vw;
