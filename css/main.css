@@ -53,33 +53,67 @@ header ul li a {
 .hero {
   background-color: #c86bfa;
   width: 100%;
-  height: 10vw;
-  padding-top: 10vw;
+  height: 40vw;
+  padding-top: 30vw;
 }
 
 .archive {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 30vw;
-  align-content: stretch;
-  background-color: #3d0066;
-  padding-top: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 100%;
+  gap: 2vw;
+  margin: 0 auto;
+  /* align-content: stretch; */
+  background-color: #20113a;
+  padding: 2vw;
   justify-items: center;
 }
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
 .can p {
   color: #c86bfa;
 }
-button {
+
+.can img {
   width: 100%;
-  background-color: #ffee32;
-  border: none;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-button a {
-  text-decoration: none;
+.plus-button {
+  position: relative;
+  /* right: 10px; */
+  /* bottom: 10px; */
+  width: 40px;
+  height: 40px;
+  background-color: #ffee32;
   color: #03071e;
-  font-size: 1.2vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
+
+.plus-button:hover {
+  background-color: #7b7b7a;
+  transform: scale(1.1);
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -119,4 +153,16 @@ footer p {
   color: #c86bfa;
   margin-left: 2vw;
   margin-top: 3vw;
+}
+
+@media (max-width: 900px) {
+  .archive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .archive {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
