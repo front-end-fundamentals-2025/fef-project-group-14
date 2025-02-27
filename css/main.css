@@ -23,6 +23,11 @@ header {
 header #title {
   width: 50%;
 }
+
+#title a {
+  text-decoration: none;
+}
+
 header p {
   color: #c86bfa;
   font-size: 3vw;
@@ -51,6 +56,8 @@ header ul li a {
   text-decoration: none;
   font-size: 3vw;
 }
+
+/* main part  */
 .hero {
   background-color: #c86bfa;
   width: 100%;
@@ -60,7 +67,8 @@ header ul li a {
 
 .archive {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  width: 96vw;
   max-width: 100%;
   gap: 2vw;
   margin: 0 auto;
@@ -71,9 +79,9 @@ header ul li a {
 }
 
 .autoBlur {
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
-  transition: filter 0.3s ease-out;
+  transition: filter 0.2s ease-out;
 }
 
 .autoBlur p {
@@ -123,6 +131,8 @@ header ul li a {
   transform: scale(1.1);
 }
 
+/* footer */
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -164,14 +174,22 @@ footer p {
   margin-top: 3vw;
 }
 
+/* inetractive design */
+
+@media (max-width: 1200px) {
+  .archive {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 900px) {
   .archive {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 550px) {
   .archive {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

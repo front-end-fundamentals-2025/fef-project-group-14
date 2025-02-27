@@ -29,6 +29,10 @@ header p {
   font-family: "Satisfy";
   letter-spacing: 0.3vw;
 }
+#title a {
+  text-decoration: none;
+}
+
 header #fizz {
   margin-top: 0.5vw;
   margin-left: 13%;
