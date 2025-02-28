@@ -254,6 +254,39 @@ header ul li a {
   transform: scale(1.1);
 }
 
+/* shopping cart */
+#cart-container {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  width: 40%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+
+#pay-button {
+  background-color: #3d0066;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#pay-button:hover {
+  background-color: #ffee32;
+}
+
 /* footer */
 
 footer {
