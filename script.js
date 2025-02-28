@@ -62,14 +62,6 @@ function updateCart() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-cartIcon.addEventListener("click", () => {
-  if (cartContainer.style.right === "0px") {
-    cartContainer.style.right = "-100%";
-  } else {
-    cartContainer.style.right = "0px";
-  }
-});
-
 function addToCart(product) {
   if (!cart.includes(product)) {
     cart.push(product);
@@ -83,8 +75,7 @@ function removeFromCart(product) {
 }
 
 plusButtons.forEach((button) => {
-  const productName = button.previousElementSibling.textContent.trim();
+  const productName = button.getAttribute("data-name");
   button.addEventListener("click", () => addToCart(productName));
 });
-
 updateCart();
