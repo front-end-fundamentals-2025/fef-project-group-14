@@ -270,6 +270,7 @@ header ul #cart-icon {
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
   z-index: 10000;
   padding: 20px;
+  text-transform: uppercase;
 }
 
 #cart {

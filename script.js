@@ -49,30 +49,71 @@ function updateCart() {
 
   cart.forEach((item) => {
     const li = document.createElement("li");
-    li.textContent = item;
+    li.textContent = item.product + " ";
+
+    const plusButton = document.createElement("button");
+    plusButton.textContent = "+";
+    plusButton.onclick = () => addToCart(item.product);
+    li.appendChild(plusButton);
+
+    const quantity = document.createElement("span");
+    quantity.textContent = item.quantity;
+    quantity.addEventListener("change", () =>
+      updateQuantity(item.product, quantity.value)
+    );
+    li.appendChild(quantity);
+
+    const minusButton = document.createElement("button");
+    minusButton.textContent = "-";
+    minusButton.onclick = () => subtractFromCart(item.product);
+    li.appendChild(minusButton);
+
+    cartList.appendChild(li);
 
     const removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
-    removeButton.onclick = () => removeFromCart(item);
+    removeButton.onclick = () => removeFromCart(item.product);
     li.appendChild(removeButton);
-
-    cartList.appendChild(li);
   });
 
-  cartTotal.textContent = cart.length;
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+  cartTotal.textContent = totalItems;
 
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function addToCart(product) {
-  if (!cart.includes(product)) {
-    cart.push(product);
+  const existingItem = cart.find((item) => item.product === product);
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cart.push({ product: product, quantity: 1 });
+  }
+  updateCart();
+}
+
+function subtractFromCart(product) {
+  const existingItem = cart.find((item) => item.product === product);
+  if (existingItem) {
+    if (existingItem.quantity > 1) {
+      existingItem.quantity--;
+    } else {
+      removeFromCart(product);
+    }
+  }
+  updateCart();
+}
+
+function updateQuantity(product, newQuantity) {
+  const existingItem = cart.find((item) => item.product === product);
+  if (existingItem && newQuantity >= 1) {
+    existingItem.quantity = parseInt(newQuantity);
     updateCart();
   }
 }
 
 function removeFromCart(product) {
-  cart = cart.filter((item) => item !== product);
+  cart = cart.filter((item) => item.product !== product);
   updateCart();
 }
 
