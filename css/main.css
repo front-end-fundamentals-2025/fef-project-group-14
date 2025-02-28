@@ -57,6 +57,10 @@ header ul li a {
   text-decoration: none;
   font-size: 3vw;
 }
+header ul #cart-icon {
+  width: 100%;
+  height: 4vw;
+}
 
 /* main part  */
 /* .hero {
@@ -258,17 +262,17 @@ header ul li a {
 #cart-container {
   position: fixed;
   top: 0;
-  right: 0px;
+  right: -100%;
+  transition: right 1s ease-in-out;
   width: 40%;
   height: 100vh;
   background-color: white;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease-in-out;
   z-index: 10000;
   padding: 20px;
 }
 
-.cart {
+#cart {
   display: flex;
   flex-direction: column;
 }

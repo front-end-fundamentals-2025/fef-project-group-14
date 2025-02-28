@@ -1,7 +1,5 @@
 const blurElements = document.querySelectorAll(".autoBlur");
 let scrolling = false;
-const slideDown = document.getElementById("plus");
-const aboutPage = document.getElementById("about");
 
 function updateBlurEffect() {
   const windowHeight = window.innerHeight;
@@ -24,12 +22,13 @@ window.addEventListener("scroll", updateBlurEffect);
 
 updateBlurEffect();
 
-slideDown.addEventListener("click", function () {
-  if (aboutPage.style.display === "none") {
-    aboutPage.style.display = "block";
-    aboutPage.style.maxHeight = aboutPage.scrollHeight + "vw";
+const cartClick = document.getElementById("cart-icon");
+const cartOpen = document.getElementById("cart-container");
+
+cartClick.addEventListener("click", function () {
+  if (cartOpen.style.right === "-300%" || cartOpen.style.right === "") {
+    cartOpen.style.right = "0%";
   } else {
-    aboutPage.style.display = "none";
-    aboutPage.style.maxHeight = "0";
+    cartOpen.style.right = "-300%";
   }
 });

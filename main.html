@@ -18,7 +18,9 @@
       <nav>
         <ul>
           <li><a href="#">&#9776;</a></li>
-          <li><a href="#" id="cart-icon">&#x1f6d2;</a></li>
+          <li id="cart-icon">
+            <a href="#">&#x1f6d2;</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -49,10 +51,12 @@
     <main>
       <section class="archive">
         <div class="autoBlur">
-          <img src="image/orginal.jpeg" alt="#" />
+          <a href="detail.html">
+            <img src="image/orginal.jpeg" alt="#" />
+          </a>
           <div class="description">
             <p>Original</p>
-            <a href="detail.html" class="plus-button">+</a>
+            <a href="#" class="plus-button">+</a>
           </div>
         </div>
 
@@ -156,7 +160,7 @@
       </section>
 
       <div id="cart-container">
-        <section class="cart">
+        <section id="cart">
           <p>Cart</p>
           <ul class="cart-items"></ul>
           <p>total:<span id="cart-total">0</span> items</p>
