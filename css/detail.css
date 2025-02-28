@@ -23,6 +23,7 @@ header {
 header #title {
   width: 50%;
 }
+
 header p {
   color: #c86bfa;
   font-size: 3vw;
@@ -36,6 +37,10 @@ header #fizz {
 }
 header #wizz {
   margin-left: 21%;
+}
+
+#title a {
+  text-decoration: none;
 }
 header ul {
   margin: 0;
