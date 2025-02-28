@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fizz Wizz</title>
     <link rel="stylesheet" href="css/detail.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
       <div id="title">
-        <a href="main.html">
-          <p id="fizz">Fizz</p>
-          <p id="wizz">Wizz</p>
-        </a>
+        <p id="fizz">Fizz</p>
+        <p id="wizz">Wizz</p>
       </div>
       <nav>
         <ul>
@@ -31,20 +30,55 @@
         <h2>Original - Whatever the taste was</h2>
         <p>15 kr</p>
         <p>Choose Size</p>
-        <section class="sizes">
+        <!--
+        
           <div class="smaller">
             <p class="size">330 ml</p>
           </div>
           <div class="bigger">
             <p class="size">500 ml</p>
           </div>
+        
+      -->
+        <section class="sizes">
+          <label class="label"
+            >330ml
+            <input type="radio" checked="checked" name="radio" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="label"
+            >500ml
+            <input type="radio" name="radio" />
+            <span class="checkmark"></span>
+          </label>
         </section>
         <button>Add To Cart</button>
       </section>
     </main>
     <section id="description">
-      <p>Description</p>
-      <button>+</button>
+      <h1>Description</h1>
+      <button id="plus">+</button>
+    </section>
+    <section id="about">
+      <h1>Fizz Wizz</h1>
+      <p>
+        Bursting with flavor, zero regrets! Experience the crisp refreshment of
+        our Tropical Bliss Sparkling Water, infused with real mango, pineapple,
+        and a hint of lime. Lightly carbonated for the perfect fizz, this drink
+        is 100% natural, with no sugar, no calories, and no artificial flavors.
+        Hydration never tasted this good!
+      </p>
+      <p>
+        Best served chilled, enjoyed solo, or mixed into your favorite mocktail.
+      </p>
+      <h1>Ingredients</h1>
+      <p>Carbonated Water, Natural Citrus Flavor, Vitamin C</p>
+      <p>
+        Made with pure carbonated water and infused with real citrus extracts,
+        this drink delivers a crisp and refreshing taste—without any added
+        sugars, artificial sweeteners, or preservatives. Plus, a boost of
+        Vitamin C helps support your immune system!
+      </p>
     </section>
 
     <footer>

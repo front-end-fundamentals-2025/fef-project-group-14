@@ -1,5 +1,7 @@
 const blurElements = document.querySelectorAll(".autoBlur");
 let scrolling = false;
+const slideDown = document.getElementById("plus");
+const aboutPage = document.getElementById("about");
 
 function updateBlurEffect() {
   const windowHeight = window.innerHeight;
@@ -21,3 +23,13 @@ function updateBlurEffect() {
 window.addEventListener("scroll", updateBlurEffect);
 
 updateBlurEffect();
+
+slideDown.addEventListener("click", function () {
+  if (aboutPage.style.display === "none") {
+    aboutPage.style.display = "block";
+    aboutPage.style.maxHeight = aboutPage.scrollHeight + "vw";
+  } else {
+    aboutPage.style.display = "none";
+    aboutPage.style.maxHeight = "0";
+  }
+});
