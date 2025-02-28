@@ -1,25 +1,27 @@
 const blurElements = document.querySelectorAll(".autoBlur");
-let scrolling = false;
 
 function updateBlurEffect() {
   const windowHeight = window.innerHeight;
+  const center = windowHeight / 2;
   const focusHeight = windowHeight * 0.3;
 
   blurElements.forEach((element) => {
     const rect = element.getBoundingClientRect();
     const elementMiddle = rect.top + rect.height / 2;
-    const distanceFromCenter = Math.abs(windowHeight / 2 - elementMiddle);
+    const distance = Math.abs(center - elementMiddle);
     const maxBlur = 20;
-    const blurValue = Math.min(
-      maxBlur,
-      ((distanceFromCenter - focusHeight) / (windowHeight / 2)) * maxBlur
-    );
-    element.style.filter = `blur(${Math.max(0, blurValue)}px)`;
+
+    let blurValue = 0;
+    if (distance > focusHeight) {
+      blurValue = ((distance - focusHeight) / (center - focusHeight)) * maxBlur;
+      blurValue = Math.min(maxBlur, blurValue);
+    }
+
+    element.style.filter = "blur(" + blurValue + "px)";
   });
 }
 
 window.addEventListener("scroll", updateBlurEffect);
-
 updateBlurEffect();
 
 const cartClick = document.getElementById("cart-icon");
@@ -79,3 +81,11 @@ plusButtons.forEach((button) => {
   button.addEventListener("click", () => addToCart(productName));
 });
 updateCart();
+
+//button to hide cart
+const shopButton = document.getElementById("shop-button");
+const Container = document.getElementById("cart-container");
+
+shopButton.addEventListener("click", () => {
+  Container.style.right = "-100%";
+});

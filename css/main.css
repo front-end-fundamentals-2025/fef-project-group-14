@@ -283,6 +283,7 @@ header ul #cart-icon {
 .cart-items {
   list-style: none;
   padding: 0;
+  border-bottom: 1px solid black;
 }
 
 .cart-items li {
@@ -294,17 +295,28 @@ header ul #cart-icon {
   border-radius: 5px;
 }
 
-#pay-button {
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#pay-button,
+#shop-button {
   background-color: #3d0066;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s;
+  border-radius: 30px;
 }
 
-#pay-button:hover {
+#pay-button:hover,
+#shop-button:hover {
   background-color: #ffee32;
 }
 
