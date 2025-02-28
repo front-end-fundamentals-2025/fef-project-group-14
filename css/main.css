@@ -263,7 +263,7 @@ header ul #cart-icon {
   position: fixed;
   top: 0;
   right: -100%;
-  transition: right 1s ease-in-out;
+  transition: right 0.7s ease-in-out;
   width: 40%;
   height: 100vh;
   background-color: white;
@@ -279,6 +279,18 @@ header ul #cart-icon {
   padding: 15px;
   border-radius: 10px;
   max-width: 250px;
+}
+
+.cart-count {
+  position: absolute;
+  top: 2.8rem;
+  right: 2rem;
+  background-color: #fafafa;
+  color: rgb(131, 6, 6);
+  font-size: 1rem;
+  padding: 2px 6px;
+  border-radius: 60%;
+  font-weight: bold;
 }
 
 .cart-items {

@@ -28,11 +28,15 @@ const cartClick = document.getElementById("cart-icon");
 const cartOpen = document.getElementById("cart-container");
 
 cartClick.addEventListener("click", function () {
+  const scrollPosition = window.scrollY;
+
   if (cartOpen.style.right === "-300%" || cartOpen.style.right === "") {
     cartOpen.style.right = "0%";
   } else {
     cartOpen.style.right = "-300%";
   }
+
+  window.scrollTo(0, scrollPosition);
 });
 
 // local storage for shopping cart
@@ -79,6 +83,7 @@ function updateCart() {
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
   cartTotal.textContent = totalItems;
 
+  document.getElementById("cart-count").textContent = totalItems;
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
