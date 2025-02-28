@@ -6,6 +6,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 header {
@@ -15,10 +17,9 @@ header {
   height: 10vw;
   gap: 57%;
   width: 100%;
-  border: bottom;
+  border-bottom: none;
   background-color: #3d0066;
-  margin-bottom: 10vw;
-  z-index: 1;
+  z-index: 3;
 }
 header #title {
   width: 50%;
@@ -59,11 +60,12 @@ header ul li a {
 
 /* main part  */
 .hero {
-  background-color: #c86bfa;
-  width: 100%;
-  height: 40vw;
-  padding-top: 30vw;
+  background-color: transparent;
+  width: 100vw;
+  height: 80vh;
 }
+
+/* css animation in hero */
 
 .archive {
   display: grid;
