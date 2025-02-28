@@ -275,6 +275,23 @@ header ul #cart-icon {
 #cart {
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-items li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
 }
 
 #pay-button {
