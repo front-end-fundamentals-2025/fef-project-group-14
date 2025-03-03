@@ -2,11 +2,15 @@
   font-family: "Satisfy";
   src: url(fonts/Satisfy-Regular.ttf);
 }
+@font-face {
+  font-family: "Pacifico";
+  src: url(fonts/Paprika-Regular.ttf);
+}
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #3d0066;
+  background-color: #20113a;
 }
 
 header {
@@ -78,10 +82,10 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding-top: 15vw;
+  padding-top: 11vw;
   justify-items: center;
   align-items: center;
-  background-color: #3d0066;
+  background-color: #20113a;
   padding-bottom: 15vw;
 }
 main figure {
@@ -94,13 +98,20 @@ figure img {
 main #info {
   grid-column: 2/3;
   color: #ffee32;
-  margin-right: 10%;
+  margin-right: 30%;
   font-family: "Satisfy";
   font-size: 1.5vw;
 }
 main #info h1 {
   color: #c86bfa;
   text-decoration: underline;
+}
+main #info h4 {
+  font-family: "Pacifico";
+}
+main #info p {
+  font-family: "Pacifico";
+  font-size: 1.2vw;
 }
 main #info button {
   font-family: "Satisfy";
@@ -109,22 +120,15 @@ main #info button {
   background-color: #ffee32;
   color: #c86bfa;
   padding: 0.5vw;
-  margin-top: 1vw;
+  margin-top: 3vw;
 }
 main #info .sizes {
   display: flex;
 }
 
-.label {
-  font-family: "Satisfy";
-  font-size: 1.5vw;
-  color: #c86bfa;
-  margin-left: 2%;
-  margin-right: 10%;
-}
 #description {
   display: flex;
-  background-color: #3d0066;
+  background-color: #20113a;
   gap: 60%;
   border-bottom: solid 0.01vw #03071e;
 }
@@ -136,7 +140,7 @@ main #info .sizes {
 }
 
 #description #plus {
-  background-color: #3d0066;
+  background-color: #20113a;
   border: none;
   font-size: 2vw;
   color: #ffee32;
@@ -164,6 +168,7 @@ main #info .sizes {
 #about p {
   color: #c86bfa;
   font-size: 1.3vw;
+  font-family: "Georgia";
 }
 
 /* shopping cart */

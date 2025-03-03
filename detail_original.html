@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fizz Wizz</title>
+    <link rel="stylesheet" href="css/detail.css" />
+    <script src="details.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="title">
+        <a href="main.html">
+          <p id="fizz">Fizz</p>
+          <p id="wizz">Wizz</p>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li id="cart-icon">
+            <a href="#">&#x1f6d2;</a>
+            <span id="cart-count" class="cart-count">0</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <figure>
+        <img src="image/orginal.jpeg" alt="" />
+      </figure>
+      <section id="info">
+        <h1>Fizz Wizz</h1>
+        <h4>Original - Whatever the taste was</h4>
+        <p>15 kr</p>
+        <p>Size - 330 ml</p>
+
+        <button>Add To Cart</button>
+      </section>
+    </main>
+    <section id="description">
+      <h1>Description</h1>
+      <button id="plus">+</button>
+    </section>
+    <section id="about">
+      <h1>Fizz Wizz</h1>
+      <p>
+        Bursting with flavor, zero regrets! Experience the crisp refreshment of
+        our Tropical Bliss Sparkling Water, infused with real mango, pineapple,
+        and a hint of lime. Lightly carbonated for the perfect fizz, this drink
+        is 100% natural, with no sugar, no calories, and no artificial flavors.
+        Hydration never tasted this good!
+      </p>
+      <p>
+        Best served chilled, enjoyed solo, or mixed into your favorite mocktail.
+      </p>
+      <h1>Ingredients</h1>
+      <p>Carbonated Water, Natural Citrus Flavor, Vitamin C</p>
+      <p>
+        Made with pure carbonated water and infused with real citrus extracts,
+        this drink delivers a crisp and refreshing taste—without any added
+        sugars, artificial sweeteners, or preservatives. Plus, a boost of
+        Vitamin C helps support your immune system!
+      </p>
+    </section>
+
+    <div id="cart-container">
+      <section id="cart">
+        <p>Cart (<span id="cart-total"> 0</span>)</p>
+        <ul class="cart-items"></ul>
+        <p>Cart Total:<span id="sum"> 0 kr</span></p>
+
+        <div class="cart-buttons">
+          <button id="shop-button">shop more</button>
+          <button id="pay-button">checkout</button>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="contact-form">
+        <p>Sign up for the news:</p>
+        <form action="action_page.php">
+          <label for="Write your name"></label>
+          <input type="text" id="mail" name="mail" placeholder="Your e-mail" />
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <p>&copy; 2025 Fizz Wizz All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
