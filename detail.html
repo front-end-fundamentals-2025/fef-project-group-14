@@ -17,15 +17,17 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">&#9776;</a></li>
-          <li><a href="#">&#x1f6d2;</a></li>
+          <li id="cart-icon">
+            <a href="#">&#x1f6d2;</a>
+            <span id="cart-count" class="cart-count">0</span>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <figure>
-        <img src="image/tiktok.webp" alt="" />
+        <img src="image/orginal.jpeg" alt="" />
       </figure>
       <section id="info">
         <h1>Fizz Wizz</h1>
@@ -82,6 +84,19 @@
         Vitamin C helps support your immune system!
       </p>
     </section>
+
+    <div id="cart-container">
+      <section id="cart">
+        <p>Cart (<span id="cart-total"> 0</span>)</p>
+        <ul class="cart-items"></ul>
+        <p>Cart Total:<span id="sum"> 0 kr</span></p>
+
+        <div class="cart-buttons">
+          <button id="shop-button">shop more</button>
+          <button id="pay-button">checkout</button>
+        </div>
+      </section>
+    </div>
 
     <footer>
       <div class="contact-form">

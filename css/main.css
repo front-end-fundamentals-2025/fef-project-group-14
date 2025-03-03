@@ -114,21 +114,27 @@ header ul #cart-icon {
   }
 }
 
-.hero-img {
-  max-width: 50vh;
-  max-height: 50%;
+/* .hero-image {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  justify-content: center;
   object-fit: contain;
-}
+} */
+
 .item {
+  display: flex;
   width: 60vh;
   height: 60vh;
+  gap: 3vw;
   /* top: 50%; */
   margin-top: 5vh;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   animation-name: leftScroll;
-  animation-duration: 50s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -141,23 +147,26 @@ header ul #cart-icon {
 }
 
 #item1 {
-  animation-delay: calc(50s / 5 * (5 - 1) * -1);
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
 #item2 {
-  animation-delay: calc(50s / 5 * (5 - 2) * -1);
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
 }
 
 #item3 {
-  animation-delay: calc(50s / 5 * (5 - 3) * -1);
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
 }
 
 #item4 {
-  animation-delay: calc(50s / 5 * (5 - 4) * -1);
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
 }
 
 #item5 {
-  animation-delay: calc(50s / 5 * (5 - 5) * -1);
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+#item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
 
 /* main */
@@ -339,15 +348,12 @@ footer p {
 /* responsive design */
 
 @media (max-width: 1000px) {
-  .cart-count {
-  }
-
   .hero {
     min-height: 60vh;
     padding-top: 10vh;
   }
 
-  .hero-img {
+  .hero-image {
     max-width: 60%;
     max-height: 60%;
   }
@@ -388,15 +394,12 @@ footer p {
 }
 
 @media (max-width: 700px) {
-  .cart-count {
-  }
-
   .hero {
     height: 20vh;
     padding-top: 8vh;
   }
 
-  .hero-img {
+  .hero-image {
     max-width: 70%;
     max-height: 70%;
   }
