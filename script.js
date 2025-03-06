@@ -47,16 +47,19 @@ const cartTotal = document.getElementById("cart-total");
 const cartContainer = document.getElementById("cart-container");
 const cartIcon = document.getElementById("cart-icon");
 const payButton = document.getElementById("pay-button");
+const cartCount = document.getElementById("cart-count");
+const itemPrice = 15;
 
 function updateCart() {
   cartList.innerHTML = "";
+  let totalPrice = 0;
 
   cart.forEach((item) => {
     const li = document.createElement("li");
-    li.textContent = item.product + " ";
+    li.textContent = item.product + " " + `${itemPrice} kr`;
 
     const plusButton = document.createElement("button");
-    plusButton.textContent = "+";
+    plusButton.textContent = " " + "+";
     plusButton.onclick = () => addToCart(item.product);
     li.appendChild(plusButton);
 
@@ -72,18 +75,24 @@ function updateCart() {
     minusButton.onclick = () => subtractFromCart(item.product);
     li.appendChild(minusButton);
 
-    cartList.appendChild(li);
-
     const removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
     removeButton.onclick = () => removeFromCart(item.product);
     li.appendChild(removeButton);
+
+    cartList.appendChild(li);
+
+    totalPrice += item.quantity * itemPrice;
   });
 
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
   cartTotal.textContent = totalItems;
 
-  document.getElementById("cart-count").textContent = totalItems;
+  if (cartCount) {
+    cartCount.textContent = totalItems;
+  }
+
+  document.getElementById("sum").textContent = `${totalPrice} kr`;
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
