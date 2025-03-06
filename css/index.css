@@ -31,19 +31,21 @@ section h1 {
   font-family: "Moondance";
   font-size: 3vw;
 }
-section button {
-  grid-column: 2/3;
-  grid-row: 3/5;
-  height: 2vw;
-  width: 20%;
-  background-color: #ffee32;
-}
-section button a {
+
+.button {
+  display: flex;
+  position: absolute;
+  top: 70%;
+  left: 47%;
   color: #03071e;
+  background-color: #ffee32;
+  padding: 7px 25px;
+  border-radius: 50px;
   text-decoration: none;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
   font-family: "Satisfy";
 }
+
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

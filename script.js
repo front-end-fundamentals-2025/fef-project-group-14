@@ -54,12 +54,17 @@ function updateCart() {
   cartList.innerHTML = "";
   let totalPrice = 0;
 
+  cartIcon.addEventListener("click", () => {
+    updateCart();
+    cartContainer.style.display = "block";
+  });
+
   cart.forEach((item) => {
     const li = document.createElement("li");
     li.textContent = item.product + " " + `${itemPrice} kr`;
 
     const plusButton = document.createElement("button");
-    plusButton.textContent = " " + "+";
+    plusButton.textContent = "+";
     plusButton.onclick = () => addToCart(item.product);
     li.appendChild(plusButton);
 
@@ -92,7 +97,7 @@ function updateCart() {
     cartCount.textContent = totalItems;
   }
 
-  document.getElementById("sum").textContent = `${totalPrice} kr`;
+  document.getElementById("sum").textContent = " " + `${totalPrice} kr`;
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
