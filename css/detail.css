@@ -113,7 +113,13 @@ main #info p {
   font-family: "Pacifico";
   font-size: 1.2vw;
 }
-main #info button {
+.button {
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  text-decoration: none;
   font-family: "Satisfy";
   width: 100%;
   font-size: 1.8vw;

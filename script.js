@@ -30,10 +30,10 @@ const cartOpen = document.getElementById("cart-container");
 cartClick.addEventListener("click", function () {
   const scrollPosition = window.scrollY;
 
-  if (cartOpen.style.right === "-300%" || cartOpen.style.right === "") {
+  if (cartOpen.style.right === "-200%" || cartOpen.style.right === "") {
     cartOpen.style.right = "0%";
   } else {
-    cartOpen.style.right = "-300%";
+    cartOpen.style.right = "-200%";
   }
 
   window.scrollTo(0, scrollPosition);
@@ -98,6 +98,8 @@ function updateCart() {
   }
 
   document.getElementById("sum").textContent = " " + `${totalPrice} kr`;
+
+  attachPlusButtonListeners();
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
@@ -136,10 +138,22 @@ function removeFromCart(product) {
   updateCart();
 }
 
+if (document.getElementById("add-to-cart")) {
+  document.getElementById("add-to-cart").addEventListener("click", function () {
+    const productName = this.getAttribute("data-product");
+    addToCart(productName);
+  });
+}
+
+function attachPlusButtonListeners() {
+  const plusButtons = document.querySelectorAll(".plus-button");
+}
+
 plusButtons.forEach((button) => {
   const productName = button.getAttribute("data-name");
   button.addEventListener("click", () => addToCart(productName));
 });
+
 updateCart();
 
 //button to hide cart
