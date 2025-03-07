@@ -308,15 +308,15 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: flex-start;
   background-color: #3d0066;
   border-top: solid 0.1vw#03071e;
+  padding-top: 2vw;
+  justify-items: center;
 }
 footer .contact-form {
-  grid-column: 1/4;
+  grid-column: 1/2;
   grid-row: 1/2;
   justify-content: center;
-  gap: 20%;
   font-size: 1.5vw;
   color: #c86bfa;
 }
@@ -331,19 +331,24 @@ select,
 textarea {
   height: 1.5vw;
   font-size: 1vw;
-  margin-left: 2vw;
 }
 label {
   font-family: "DM";
   font-size: 1.2vw;
 }
-footer p {
-  grid-column: 1/2;
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer .info {
   grid-row: 2/3;
-  color: #c86bfa;
-  margin-left: 2vw;
-  margin-top: 3vw;
-  font-size: 1vw;
+}
+footer .contactinfo {
+  grid-row: 2/3;
+}
+footer .useful {
+  grid-row: 2/3;
 }
 
 /* responsive design */
