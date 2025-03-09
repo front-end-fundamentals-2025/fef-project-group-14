@@ -306,6 +306,8 @@ header ul #cart-icon {
 
 footer {
   display: grid;
+  height: 35vw;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   background-color: #3d0066;
@@ -316,21 +318,24 @@ footer {
 footer .contact-form {
   grid-column: 1/2;
   grid-row: 1/2;
-  justify-content: center;
   font-size: 1.5vw;
   color: #c86bfa;
+  margin-left: 15%;
+  margin-top: 2vw;
 }
 input[type="submit"] {
   margin-top: 1vw;
   height: 2vw;
   background-color: #ffee32;
   font-size: 1vw;
+  border-radius: 2vw;
 }
 input[type="text"],
 select,
 textarea {
   height: 1.5vw;
   font-size: 1vw;
+  border-radius: 2vw;
 }
 label {
   font-family: "DM";
@@ -341,13 +346,27 @@ footer ul {
   margin: 0;
   padding: 0;
 }
+footer h1 {
+  color: #ffee32;
+  font-size: 2vw;
+}
+footer a {
+  color: #c86bfa;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+footer p {
+  color: #c86bfa;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
 footer .info {
   grid-row: 2/3;
 }
-footer .contactinfo {
+footer .useful {
   grid-row: 2/3;
 }
-footer .useful {
+footer .contactinfo {
   grid-row: 2/3;
 }
 
@@ -389,11 +408,34 @@ footer .useful {
     height: 35px;
     font-size: 1.3rem;
   }
+  footer {
+    height: 50vw;
+  }
 
   footer .contact-form {
     font-size: 3vw;
+    grid-column: 1/3;
+    margin-right: 39%;
   }
-
+  input[type="submit"] {
+    height: 3vw;
+    font-size: 1.8vw;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    height: 3vw;
+    font-size: 1.8vw;
+  }
+  label {
+    font-size: 2vw;
+  }
+  footer h1 {
+    font-size: 3vw;
+  }
+  footer a {
+    font-size: 2vw;
+  }
   footer p {
     font-size: 2vw;
   }
@@ -435,9 +477,15 @@ footer .useful {
     height: 30px;
     font-size: 1rem;
   }
+  footer {
+    height: 80vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 
   footer .contact-form {
     font-size: 5vw;
+    grid-column: 1/2;
   }
 
   footer p {
