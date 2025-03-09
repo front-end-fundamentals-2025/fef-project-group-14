@@ -1,3 +1,5 @@
+/* imported font faces */
+
 @font-face {
   font-family: "Satisfy";
   src: url(fonts/Satisfy-Regular.ttf);
@@ -12,6 +14,7 @@ body {
   padding: 0;
   background-color: #20113a;
 }
+
 /* header */
 
 header {
@@ -272,14 +275,14 @@ input[type="submit"] {
   height: 2vw;
   background-color: #ffee32;
   font-size: 1vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
 }
 input[type="text"],
 select,
 textarea {
   height: 1.5vw;
   font-size: 1vw;
-  border-radius: 2vw;
+  border-radius: 1vw;
 }
 label {
   font-family: "DM";
