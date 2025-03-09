@@ -12,6 +12,7 @@ body {
   padding: 0;
   background-color: #20113a;
 }
+/* header */
 
 header {
   display: flex;
@@ -60,6 +61,7 @@ header ul li a {
   text-decoration: none;
   font-size: 3vw;
 }
+/* item number in cart */
 
 .cart-count {
   position: absolute;
@@ -77,6 +79,7 @@ header ul li a {
   align-items: center;
   justify-content: center;
 }
+/* main layout*/
 
 main {
   display: grid;
@@ -132,6 +135,8 @@ main #info .sizes {
   display: flex;
 }
 
+/* Description label */
+
 #description {
   display: flex;
   background-color: #20113a;
@@ -144,7 +149,6 @@ main #info .sizes {
   font-size: 2vw;
   margin-left: 15%;
 }
-
 #description #plus {
   background-color: #20113a;
   border: none;
@@ -157,6 +161,9 @@ main #info .sizes {
   text-align: center;
   margin: 0;
 }
+
+/* The roll out about page */
+
 #about {
   display: none;
   padding-left: 15%;
@@ -239,44 +246,70 @@ main #info .sizes {
 #shop-button:hover {
   background-color: #ffee32;
 }
+/* footer */
 
 footer {
   display: grid;
+  height: 35vw;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-content: flex-start;
   background-color: #3d0066;
   border-top: solid 0.1vw#03071e;
+  padding-top: 2vw;
+  justify-items: center;
 }
 footer .contact-form {
-  grid-column: 1/4;
+  grid-column: 1/2;
   grid-row: 1/2;
-  justify-content: center;
-  gap: 20%;
   font-size: 1.5vw;
   color: #c86bfa;
+  margin-left: 15%;
+  margin-top: 2vw;
 }
 input[type="submit"] {
   margin-top: 1vw;
   height: 2vw;
   background-color: #ffee32;
   font-size: 1vw;
+  border-radius: 2vw;
 }
 input[type="text"],
 select,
 textarea {
   height: 1.5vw;
   font-size: 1vw;
-  margin-left: 2vw;
+  border-radius: 2vw;
 }
 label {
   font-family: "DM";
   font-size: 1.2vw;
 }
-footer p {
-  grid-column: 1/2;
-  grid-row: 2/3;
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer h1 {
+  color: #ffee32;
+  font-size: 2vw;
+}
+footer a {
   color: #c86bfa;
-  margin-left: 2vw;
-  margin-top: 3vw;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+footer p {
+  color: #c86bfa;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+footer .info {
+  grid-row: 2/3;
+}
+footer .useful {
+  grid-row: 2/3;
+}
+footer .contactinfo {
+  grid-row: 2/3;
 }

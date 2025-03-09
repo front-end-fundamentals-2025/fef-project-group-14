@@ -478,18 +478,52 @@ footer .contactinfo {
     font-size: 1rem;
   }
   footer {
-    height: 80vw;
+    height: 160vw;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: start;
   }
 
   footer .contact-form {
     font-size: 5vw;
     grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  input[type="submit"] {
+    height: 5vw;
+    font-size: 2.5vw;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    height: 5vw;
+    font-size: 2.5vw;
+  }
+  label {
+    font-size: 3vw;
+  }
+  footer h1 {
+    font-size: 5vw;
+  }
   footer p {
     font-size: 4vw;
+  }
+  footer a {
+    font-size: 4vw;
+  }
+  footer .info {
+    grid-row: 2/3;
+    margin-left: 10%;
+  }
+  footer .useful {
+    grid-row: 3/4;
+    margin-left: 10%;
+  }
+  footer .contactinfo {
+    grid-row: 4/5;
+    margin-left: 10%;
   }
 }
 
