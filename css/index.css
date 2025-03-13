@@ -47,21 +47,23 @@ section figure {
   grid-column: 1/4;
   grid-row: 1/4;
 }
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 section h1 {
-  grid-column: 2/3;
+  grid-column: 1/2;
   grid-row: 1/2;
   color: rgb(63, 5, 78);
   font-family: "Moondance";
   font-size: 3vw;
   text-align: center;
   z-index: 10000;
+  margin-top: 20vw;
 }
 
 .button {
-  display: flex;
-  position: absolute;
-  top: 70%;
-  left: 47%;
   color: #03071e;
   background-color: #ffee32;
   padding: 7px 25px;
@@ -74,4 +76,22 @@ section h1 {
 .button:hover {
   color: #ffffff;
   background-color: #626157;
+}
+@media (max-width: 1000px) {
+  section h1 {
+    font-size: 5vw;
+  }
+
+  .button {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 700px) {
+  section h1 {
+    font-size: 6vw;
+  }
+
+  .button {
+    font-size: 4.5vw;
+  }
 }
