@@ -73,6 +73,7 @@ header ul li a {
 .arrow a {
   text-decoration: none;
   font-size: 3vw;
+  font-family: "Franklin Gothic Medium", sans-serif;
   color: #ffee32;
   margin: 0;
   margin-left: 3%;
@@ -216,6 +217,7 @@ main #info .sizes {
   z-index: 10000;
   padding: 20px;
   text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", sans-serif;
 }
 
 #cart {
