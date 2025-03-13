@@ -289,6 +289,57 @@ label {
   font-family: "DM";
   font-size: 1.2vw;
 }
+
+.remove-btn {
+  background-color: #9d41e8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10%;
+  font-size: 1vw;
+}
+
+.remove-btn:hover {
+  background-color: #4d4c4e;
+  color: white;
+}
+
+.plus-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(221, 220, 220);
+  border-radius: 4px;
+  padding-top: 0;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-right: 4%;
+  font-size: 1vw;
+}
+
+.plus-btn:hover {
+  background-color: #fff01d;
+  border: 1px solid #fff01d;
+  color: rgb(0, 0, 0);
+}
+
+.minus-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(221, 220, 220);
+  border-radius: 4px;
+  padding-top: 0;
+  cursor: pointer;
+  margin-left: 4%;
+  font-size: 1vw;
+}
+
+.minus-btn:hover {
+  background-color: #fff01d;
+  border: 1px solid #fff01d;
+  color: rgb(0, 0, 0);
+}
+
 footer ul {
   list-style-type: none;
   margin: 0;
@@ -317,6 +368,7 @@ footer .useful {
 footer .contactinfo {
   grid-row: 2/3;
 }
+
 @media (max-width: 1000px) {
   main #info h1 {
     font-size: 4vw;
@@ -392,6 +444,7 @@ footer .contactinfo {
     font-size: 2vw;
   }
 }
+
 @media (max-width: 700px) {
   header {
     height: 15vw;
@@ -459,6 +512,7 @@ footer .contactinfo {
   .minus-btn {
     font-size: 2vw;
   }
+
   footer {
     height: 160vw;
     grid-template-columns: 1fr;
