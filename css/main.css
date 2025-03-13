@@ -114,7 +114,6 @@ header ul #cart-icon {
   }
 }
 
-
 .item {
   display: flex;
   width: 60vh;
@@ -202,8 +201,15 @@ header ul #cart-icon {
   justify-content: center;
   text-align: center;
   width: 100%;
-  font-size: 3vw;
-  padding: 10px 0;
+  font-size: 2vw;
+  padding: 0;
+  margin: 0;
+}
+.description .price {
+  margin: 0;
+  margin-bottom: 1vw;
+  color: #fafafa;
+  font-size: 1.7vw;
 }
 
 .plus-button {
@@ -463,7 +469,7 @@ footer .contactinfo {
     font-size: 1.3rem;
   }
   #cart-container {
-    width: 30%;
+    width: 35%;
   }
   .remove-btn {
     font-size: 1.5vw;
@@ -555,7 +561,7 @@ footer .contactinfo {
     font-size: 1rem;
   }
   #cart-container {
-    width: 45%;
+    width: 50%;
   }
   .remove-btn {
     font-size: 2vw;

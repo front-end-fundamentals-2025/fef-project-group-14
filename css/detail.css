@@ -64,6 +64,23 @@ header ul li a {
   text-decoration: none;
   font-size: 3vw;
 }
+.arrow {
+  display: flex;
+  background-color: #20113a;
+  height: 3vw;
+  padding-top: 11vw;
+}
+.arrow a {
+  text-decoration: none;
+  font-size: 3vw;
+  color: #ffee32;
+  margin: 0;
+  margin-left: 3%;
+  margin-top: 0.5vw;
+}
+.arrow a:hover {
+  color: #c86bfa;
+}
 /* item number in cart */
 
 .cart-count {
@@ -88,7 +105,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding-top: 11vw;
+  padding-top: 2vw;
   justify-items: center;
   align-items: center;
   background-color: #20113a;
@@ -399,7 +416,7 @@ footer .contactinfo {
     font-size: 2.3vw;
   }
   #cart-container {
-    width: 30%;
+    width: 35%;
   }
   .remove-btn {
     font-size: 1.5vw;
@@ -499,7 +516,7 @@ footer .contactinfo {
     font-size: 3.3vw;
   }
   #cart-container {
-    width: 45%;
+    width: 50%;
   }
   .remove-btn {
     font-size: 2vw;
