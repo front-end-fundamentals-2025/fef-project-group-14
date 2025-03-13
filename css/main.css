@@ -244,7 +244,7 @@ header ul #cart-icon {
   top: 0;
   right: -100%;
   transition: right 0.7s ease-in-out;
-  width: 40%;
+  width: 20%;
   height: 100vh;
   background-color: white;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
@@ -468,6 +468,20 @@ footer .contactinfo {
     height: 35px;
     font-size: 1.3rem;
   }
+  #cart-container {
+    width: 30%;
+  }
+  .remove-btn {
+    font-size: 1.5vw;
+  }
+
+  .plus-btn {
+    font-size: 1.5vw;
+  }
+
+  .minus-btn {
+    font-size: 1.5vw;
+  }
   footer {
     height: 50vw;
   }
@@ -545,6 +559,20 @@ footer .contactinfo {
     width: 30px;
     height: 30px;
     font-size: 1rem;
+  }
+  #cart-container {
+    width: 45%;
+  }
+  .remove-btn {
+    font-size: 2vw;
+  }
+
+  .plus-btn {
+    font-size: 2vw;
+  }
+
+  .minus-btn {
+    font-size: 2vw;
   }
   footer {
     height: 160vw;
