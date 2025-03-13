@@ -96,7 +96,8 @@ header ul #cart-icon {
   padding-top: 12vh;
   margin-inline: auto;
   mask-image: linear-gradient(
-    to right,
+    /* The following 7 lines of code was adapted from https://www.youtube.com/watch?v=Reu0hHbis5w  Accessed: 2025-13-03 */
+      to right,
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 1) 20%,
     rgba(0, 0, 0, 1) 80%,
@@ -124,7 +125,7 @@ header ul #cart-icon {
   position: absolute;
   left: 50%;
   transform: translateX(0%);
-  animation-name: leftScroll;
+  animation-name: leftScroll; /* The following 4 lines of code was adapted from https://www.youtube.com/watch?v=Reu0hHbis5w  Accessed: 2025-13-03 */
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -138,6 +139,7 @@ header ul #cart-icon {
 }
 
 #item1 {
+  /* The following lines 141-162 of code was adapted from https://www.youtube.com/watch?v=Reu0hHbis5w  Accessed: 2025-13-03 */
   animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
@@ -301,6 +303,7 @@ header ul #cart-icon {
 }
 
 .remove-btn {
+  /* The following line of code was adapted from https://chatgpt.com/share/67d343e6-aa6c-800a-86c0-7a1a6b6e09f9 Accessed: 2025-13-03 */
   background-color: #9d41e8;
   color: white;
   border: none;
@@ -316,6 +319,7 @@ header ul #cart-icon {
 }
 
 .plus-btn {
+  /* The following line of code was adapted from https://chatgpt.com/share/67d343e6-aa6c-800a-86c0-7a1a6b6e09f9 Accessed: 2025-13-03 */
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: 1px solid rgb(221, 220, 220);
@@ -334,6 +338,7 @@ header ul #cart-icon {
 }
 
 .minus-btn {
+  /* The following line of code was adapted from https://chatgpt.com/share/67d343e6-aa6c-800a-86c0-7a1a6b6e09f9 Accessed: 2025-13-03 */
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border: 1px solid rgb(221, 220, 220);
