@@ -387,6 +387,9 @@ footer .contactinfo {
 }
 
 @media (max-width: 1000px) {
+  .arrow a {
+    font-size: 5vw;
+  }
   main #info h1 {
     font-size: 4vw;
   }
@@ -472,10 +475,17 @@ footer .contactinfo {
   header ul li a {
     font-size: 5vw;
   }
+  .arrow {
+    padding-top: 16vw;
+    height: 7vw;
+  }
+  .arrow a {
+    font-size: 7vw;
+  }
   main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 16vw;
+    padding-top: 5vw;
   }
   main figure {
     grid-column: 1/2;
