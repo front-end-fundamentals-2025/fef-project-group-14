@@ -65,6 +65,7 @@ function updateCart() {
 
     const plusButton = document.createElement("button");
     plusButton.textContent = "+";
+    plusButton.classList.add("plus-btn");
     plusButton.onclick = () => addToCart(item.product);
     li.appendChild(plusButton);
 
@@ -77,11 +78,13 @@ function updateCart() {
 
     const minusButton = document.createElement("button");
     minusButton.textContent = "-";
+    minusButton.classList.add("minus-btn");
     minusButton.onclick = () => subtractFromCart(item.product);
     li.appendChild(minusButton);
 
     const removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
+    removeButton.classList.add("remove-btn");
     removeButton.onclick = () => removeFromCart(item.product);
     li.appendChild(removeButton);
 

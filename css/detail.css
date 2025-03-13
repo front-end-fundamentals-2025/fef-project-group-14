@@ -110,7 +110,7 @@ main #info {
 }
 main #info h1 {
   color: #c86bfa;
-  text-decoration: underline;
+  text-decoration: none;
 }
 main #info h4 {
   font-family: "Pacifico";
@@ -134,6 +134,12 @@ main #info p {
   padding: 0.5vw;
   margin-top: 3vw;
 }
+
+.button:hover {
+  background-color: #5c5b54;
+  color: #dbd1e0;
+}
+
 main #info .sizes {
   display: flex;
 }
@@ -158,6 +164,7 @@ main #info .sizes {
   font-size: 2vw;
   color: #ffee32;
 }
+
 /* The roll out about page */
 
 #about {

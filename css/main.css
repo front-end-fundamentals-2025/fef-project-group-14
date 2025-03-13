@@ -251,6 +251,7 @@ header ul #cart-icon {
   z-index: 10000;
   padding: 20px;
   text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", sans-serif;
 }
 
 #cart {
@@ -286,7 +287,6 @@ header ul #cart-icon {
 #pay-button,
 #shop-button {
   background-color: #3d0066;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   border: none;
@@ -300,6 +300,56 @@ header ul #cart-icon {
 #pay-button:hover,
 #shop-button:hover {
   background-color: #ffee32;
+}
+
+.remove-btn {
+  background-color: #9d41e8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10%;
+  font-size: 1vw;
+}
+
+.remove-btn:hover {
+  background-color: #4d4c4e;
+  color: white;
+}
+
+.plus-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(221, 220, 220);
+  border-radius: 4px;
+  padding-top: 0;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-right: 4%;
+  font-size: 1vw;
+}
+
+.plus-btn:hover {
+  background-color: #fff01d;
+  border: 1px solid #fff01d;
+  color: rgb(0, 0, 0);
+}
+
+.minus-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(221, 220, 220);
+  border-radius: 4px;
+  padding-top: 0;
+  cursor: pointer;
+  margin-left: 4%;
+  font-size: 1vw;
+}
+
+.minus-btn:hover {
+  background-color: #fff01d;
+  border: 1px solid #fff01d;
+  color: rgb(0, 0, 0);
 }
 
 /* footer */
@@ -373,6 +423,16 @@ footer .contactinfo {
 /* responsive design */
 
 @media (max-width: 1000px) {
+  header {
+    height: 12vw;
+  }
+  header p {
+    font-size: 4vw;
+  }
+  header ul li a {
+    font-size: 4vw;
+  }
+
   .hero {
     min-height: 60vh;
     padding-top: 10vh;
@@ -442,6 +502,15 @@ footer .contactinfo {
 }
 
 @media (max-width: 700px) {
+  header {
+    height: 15vw;
+  }
+  header p {
+    font-size: 5vw;
+  }
+  header ul li a {
+    font-size: 5vw;
+  }
   .hero {
     height: 20vh;
     padding-top: 8vh;
