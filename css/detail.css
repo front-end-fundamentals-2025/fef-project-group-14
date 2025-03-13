@@ -73,21 +73,22 @@ header ul li a {
 .arrow a {
   text-decoration: none;
   font-size: 3vw;
+  height: 3.5vw;
+  width: 3.5%;
+  padding-top: auto;
+  padding-bottom: auto;
   font-family: "Franklin Gothic Medium", sans-serif;
-  color: #ffee32;
+  color: #9d41e8;
   margin: 0;
   margin-left: 3%;
   margin-top: 0.5vw;
-  background-color: #9d41e8;
+  background-color: #ffee32;
   border-radius: 20vw;
-  height: 3.8vw;
-  padding-top: 0.2vw;
-  width: 4%;
   text-align: center;
 }
 .arrow a:hover {
-  color: #c86bfa;
-  background-color: #ffee32;
+  color: #ffee32;
+  background-color: #c86bfa;
 }
 /* item number in cart */
 
@@ -398,6 +399,8 @@ footer .contactinfo {
 @media (max-width: 1000px) {
   .arrow a {
     font-size: 5vw;
+    height: 5.5vw;
+    width: 5.5%;
   }
   main #info h1 {
     font-size: 4vw;
@@ -490,6 +493,8 @@ footer .contactinfo {
   }
   .arrow a {
     font-size: 7vw;
+    height: 7.5vw;
+    width: 7.5%;
   }
   main {
     grid-template-columns: 1fr;
